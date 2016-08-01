@@ -5,7 +5,6 @@
     </head>
     <body>
         <?php
-        echo 'Welcome!';
         header("Location: public/index.php");
         exit();
         ?>
