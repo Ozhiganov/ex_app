@@ -11,6 +11,7 @@ class MySQLDatabase {
     {
         $this->open_connection();
     }
+    
 
     public function open_connection()
     {
@@ -56,7 +57,7 @@ class MySQLDatabase {
     // "database-neutral" methods
     public function fetch_array($result_set)
     {
-        return mysql_fetch_array($result_set);
+        return mysql_fetch_assoc($result_set);
     }
 
     public function num_rows($result_set)
